@@ -8,7 +8,7 @@ header{
     color:white;
     display:flex;
     flex-direction: column;
-    padding: 0px 266px 0px 266px;
+    padding: 0 20vw 2vw 20vw;
 }
 
 .top{
@@ -35,8 +35,10 @@ ul{
 }
 
 img{
-    width: 450px;
-    height:250px;
+    width: 30vw;
+    height:13vw;
+    min-width: 300px;
+    min-height: 200px;
     display: flex;
     flex:1 1 auto;
 
@@ -46,9 +48,10 @@ img{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     gap:10px;
+    flex-wrap: wrap;
 }
 
 .mainHeaderText, .logo{
@@ -63,22 +66,24 @@ img{
     color: #E5E7EB;
 }
 .text{
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
 }
 
 .middleSection{
     display:flex;
     background-color: white;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    padding: 4px 266px 40px 266px;
+    padding: 1vw 20vw 10vw 20vw;
 
 
 }
 
 .middleTitle{
-    padding-bottom: 20px;
+    padding-bottom: 2vw;
     
 }
 
@@ -90,30 +95,36 @@ img{
 .images{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap:80px;
-
+    flex-wrap: wrap;
 
 }
 
 .individualimg {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 180px; /* Set a maximum width for the container */
+    min-width:15%; /* Set a maximum width for the container */
+    max-width: 250px;
     text-align: center; /* Center-align the text */
-    gap:10px; /*gap between img and word */
+    gap: 05px; /*gap between img and word */
     font-size: 18px;
     color: #1F2937;
+    flex-shrink: 0;
+
 }
 
 .im {
-    max-height: 160px;
+   
+    min-height: 250px;
+    max-height: 150px;
     border-radius: 20px;
     border-style: solid;
     border-color: #3882F6;
     width: 100%; /* Ensure the image takes up the full width of the container */
 }
+
 
 button{
     background-color: #3882F6;
@@ -126,14 +137,12 @@ button{
 
 .quoteSection{
     background-color: #E5E7EB;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 20vw;
+    padding-right: 20vw;
     padding-top: 40px;
     padding-bottom: 40px;
     font-weight:lighter;
     color:#1F2937;
-
-    
 }
 .quoteleft{
     font-size: 36px;
@@ -158,6 +167,7 @@ button{
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
+
     
 }
 
@@ -174,6 +184,8 @@ button{
     width: 1000px;
 
     gap:15px;
+    flex-wrap: wrap;
+
 
 }
 .innerBannertext{
